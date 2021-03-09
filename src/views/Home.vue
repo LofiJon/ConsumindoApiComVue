@@ -63,7 +63,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;/*100%*/
+    width: 75%;/*100%*/
     height: 100%;
     background: #582ec2;
     transition: .5s;
@@ -74,11 +74,14 @@ export default {
     transform: perspective(2000px) rotateY(0deg);
 }
 .card .details .center {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+        height: 23rem;
+        width: 10rem;
     background: #fff;
     position: absolute;
-    top: 50%;
+    top: 40%;
+    width: 14rem;
     margin: 2rem;
     transform: translateY(-50%);
 }

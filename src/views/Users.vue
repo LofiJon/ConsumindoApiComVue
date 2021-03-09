@@ -18,10 +18,10 @@
                   </thead>
                    <tbody>
                <tr v-for="user in users" :key="user.id">
-                 <td>{{user.id}}</td>
+               
                  <td>{{user.name}}</td>
                  <td>{{user.email}}</td>
-                 
+                 <td>{{user.phone}}</td>
 
                </tr>
                    </tbody>
@@ -29,7 +29,19 @@
           </div>
           <div class="col-md-2"></div>
       </div>
-  
+      <div class="row">
+          <div class="col-md-2"></div>
+         
+          <div class="col-md-8 align-self">
+               <h2>Inserir dados </h2>
+              <input type="text" v-model="newUser" class="form-control">
+              <input type="text" v-model="newEmail" class="form-control mt-2">
+              <input type="text" v-model="newPhone" class="form-control mt-2">
+              <button class="btn btn-success mt-4" @click="addUsers"> Adicionar  </button>
+             
+          </div>
+           <div class="col-md-2"></div>
+      </div>
     </div>
     
 </div>

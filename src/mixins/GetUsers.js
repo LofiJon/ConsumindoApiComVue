@@ -1,9 +1,16 @@
 import axios from 'axios'
+
+
 export default{
 data(){
     return{
         users: [
-        ]
+        ],
+        newPhone: '',
+        newUser: '',
+        newEmail: '',
+        inserindo: false
+      
     }
   },
 
@@ -16,6 +23,27 @@ data(){
        console.error("ocorreu um erro na requisição")
      }
     },
+
+    addUsers(){
+      this.inserindo = true
+     
+      axios.post("https://jsonplaceholder.typicode.com/users",{
+      
+      phone: this.newPhone,
+      name: this.newUser,
+        email: this.newEmail
+      
+      })
+      .then((response)=>{
+         const data = response.data
+         this.users.push(data)
+         this.newUser = ''
+         this.inserindo = false
+      })
+
+      
+
+    }
     }
     
   }
