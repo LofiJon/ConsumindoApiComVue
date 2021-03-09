@@ -3,7 +3,7 @@
  
     <div class="card">
     <div class="image">
-      <img  src="../assets/jonathanMalagueta.jpg"/>
+      <img  src="../assets/jonathanMalagueta.jpeg"/>
     </div>
     <div class="details">
       <div class="center">
