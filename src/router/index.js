@@ -6,6 +6,8 @@ import FilmsGhibli from '../views/FilmsGhibli.vue'
 import PeopleGhibli from '../views/PeopleGhibli.vue'
 
 
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -33,7 +35,7 @@ const routes = [
 
       }
     ]
-  }
+  },
 
   
 ]

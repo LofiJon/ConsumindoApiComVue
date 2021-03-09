@@ -4,7 +4,8 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/users">Consumo da api de usuários</router-link> |
-      <router-link to="/filmsGhibli">Api studio ghibli</router-link>
+      <router-link to="/filmsGhibli">Api studio ghibli</router-link> 
+    
     </div>
     <transition name="fade">
     <router-view/>

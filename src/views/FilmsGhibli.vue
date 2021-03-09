@@ -12,16 +12,16 @@
       <h2>Lista de usuários puxados da api livre  <a href="https://ghibliapi.herokuapp.com/films" class="linkUser">Studio Ghibli</a></h2>
    
          <li v-for="film in films" :key="film.id">
-           <div class="card mt-5">
+           <div class="card mt-5 mycadrd">
                 <div class="card-body m-3">
                  <h5 class="card-title"><strong>Titulo: </strong>{{film.title}}</h5>
-                 <p class="card-text">{{film.description}}</p>
+                 <p class="card-text"><strong> Sinopse: </strong>{{film.description}}</p>
                  <p class="card-text"><strong>Diretor: </strong>{{film.director}}</p>
               </div>
            </div>
          </li>
       
-      <router-link to="filmsGhibli/peopleghibli" class="btn btn-primary m-5">Studio ghibli character names</router-link>
+      <router-link to="filmsGhibli/peopleghibli" class="btn m-5 bth">Studio ghibli character names</router-link>
       <transition name="slide-fade">
       <router-view></router-view>
       </transition>
@@ -55,6 +55,21 @@ mounted(){
 
 li{
   list-style: none;
+}
+
+.bth{
+    background: #582ec2;
+    color: #fff;
+}
+.mycadrd{
+  -webkit-box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+}
+
+.mycadrd:hover{
+   transform: scale(1.1);
+  transition: all 1s;
 }
 .slide-fade-enter-active {
   transition: all .3s ease;

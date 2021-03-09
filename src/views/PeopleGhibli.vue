@@ -10,7 +10,7 @@
           <div class="col-md-2"></div>
              <div class="col-md-12">
                    <li v-for="people in peoples" :key="people.id" class="mt-5">
-                       <div class="card">
+                       <div class="card mycard">
                         <div class="card-body">
                     <h5 class="card-title"> <strong>Name: </strong>{{people.name}}</h5>
                     <p class="card-text"><strong> Gender : </strong>{{people.gender}}</p>
@@ -50,4 +50,14 @@ mounted(){
 
 <style>
 
+.mycard{
+  -webkit-box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+box-shadow: 8px 5px 8px 3px rgba(0,0,0,0.75);
+}
+
+.mycard:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+}
 </style>
