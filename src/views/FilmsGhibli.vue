@@ -3,6 +3,8 @@
   "title": "Grave of the Fireflies",
   "original_title": "火垂るの墓",
   "original_title_romanised": "Hotaru no haka", -->
+
+<div class="container-fluid">
 <div class="container">
   <div class="row">
     <div class="col-md-2"></div>
@@ -11,7 +13,7 @@
    
          <li v-for="film in films" :key="film.id">
            <div class="card mt-5">
-                <div class="card-body">
+                <div class="card-body m-3">
                  <h5 class="card-title"><strong>Titulo: </strong>{{film.title}}</h5>
                  <p class="card-text">{{film.description}}</p>
                  <p class="card-text"><strong>Diretor: </strong>{{film.director}}</p>
@@ -19,8 +21,8 @@
            </div>
          </li>
       
-      <router-link to="filmsGhibli/peopleghibli" class="btn btn-primary mt-5">Personagens do studio Ghibli</router-link>
-      <transition name="fade">
+      <router-link to="filmsGhibli/peopleghibli" class="btn btn-primary m-5">Studio ghibli character names</router-link>
+      <transition name="slide-fade">
       <router-view></router-view>
       </transition>
 
@@ -28,18 +30,20 @@
     </div>
     <div class="col-md-2"></div>
   </div>
-  <Footer/>
+ 
+ </div>
+  
  </div>
 </template>
 
 <script>
 import GetFilms from '@/mixins/GetFilms.js'
-import Footer from '@/components/Footer.vue'
+// import Footer from '@/components/Footer.vue'
 export default { 
 name: 'FilmsGhibli',
 mixins: [GetFilms],
 components:{
-   Footer
+  //  Footer
 },
 mounted(){
     this.GetFilms()
@@ -52,10 +56,15 @@ mounted(){
 li{
   list-style: none;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.slide-fade-enter-active {
+  transition: all .3s ease;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
   opacity: 0;
 }
 

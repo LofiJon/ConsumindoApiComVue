@@ -3,7 +3,7 @@
  
     <div class="card">
     <div class="image">
-      <img  src="../assets/jonathanMalagueta.jpeg"/>
+      <img  src="../assets/jonathanMalagueta.jpg"/>
     </div>
     <div class="details">
       <div class="center">
@@ -19,6 +19,9 @@
       </div>
     </div>
   </div>
+  <span>
+    Clique na imagem(mobile) ou passe o mouse por cima (desktop)
+  </span>
   </div>
 </template>
 

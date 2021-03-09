@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid footerMeu" >
-
-  </div>
+  <footer>
+   <p><strong>Criado por: </strong>Jonathan Malagueta </p>
+ </footer>
 </template>
 
 <script>
@@ -11,7 +11,20 @@ export default {
 </script>
 
 <style>
-.footerMeu{
-    background: #582ec2;
+p{
+  margin-top: 20px;
 }
+footer{
+    background: #582ec2;
+     position: absolute;
+     color: #fff;
+     margin-bottom: 0rem;
+      width: 100%;
+    height: 50px;    
+    text-align: center;
+    line-height: 10px;
+    margin-top: 100%;
+}
+
+
 </style>

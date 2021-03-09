@@ -9,7 +9,9 @@
     <transition name="fade">
     <router-view/>
     </transition>
+    <div class="sep">
     <Footer/>
+    </div>
   </div>
   
 </template>
@@ -42,6 +44,10 @@ export default {
   color: #2c3e50;
   text-decoration: none;
 }
+.sep{
+  margin-top: 50%;
+}
+
 
 #nav a.router-link-exact-active {
   color: #e8671c;

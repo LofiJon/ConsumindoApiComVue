@@ -22,7 +22,7 @@
                     </li>
              </div>
           <div class="col-md-2"></div>
-             <Footer/>
+         
       </div>
    
   </div>
@@ -30,11 +30,11 @@
 
 <script>
  import GetFilms from '@/mixins/GetFilms.js'
- import Footer from '@/components/Footer.vue'
+
 export default {
  name: "PeopleGhibli",
  components:{
-    Footer
+   
   },
 
 

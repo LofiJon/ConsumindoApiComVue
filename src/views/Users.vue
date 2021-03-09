@@ -1,11 +1,12 @@
 <template>
+<div class="container-fluid">
    <div class="container">
   
       <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8 col-sm-12">
                 <h2>Lista de usuários puxados da <a href="https://jsonplaceholder.typicode.com/users" class="linkUser">JSONPlaceholder</a></h2>
-              <table class="table mt-4">
+              <table class="table table-bordered mt-4">
                   <thead>
                       <tr>
                                 <th scope="col">id</th>
@@ -28,16 +29,21 @@
           </div>
           <div class="col-md-2"></div>
       </div>
-
+  
     </div>
+    
+</div>
 </template>
 
 <script>
 import GetUsers from '@/mixins/GetUsers.js'
+// import Footer from '@/components/Footer.vue'
 export default {
  name: 'Users',
  mixins: [GetUsers],
- 
+ components:{
+    //  Footer
+ },
  mounted(){
      this.GetUsers()
  },
