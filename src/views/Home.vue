@@ -19,9 +19,7 @@
       </div>
     </div>
   </div>
-  <span>
-    Clique na imagem(mobile) ou passe o mouse por cima (desktop)
-  </span>
+ 
   </div>
 </template>
 
