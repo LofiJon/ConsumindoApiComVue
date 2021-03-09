@@ -46,6 +46,7 @@ export default {
 }
 .sep{
   margin-top: 50%;
+  width: 100%;
 }
 
 

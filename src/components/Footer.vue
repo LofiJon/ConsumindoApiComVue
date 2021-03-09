@@ -19,7 +19,8 @@ footer{
      position: absolute;
      color: #fff;
      margin-bottom: 0rem;
-      width: 100%;
+    width: 100%;
+    margin: 0;
     height: 50px;    
     text-align: center;
     line-height: 10px;
