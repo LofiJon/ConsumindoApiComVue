@@ -5,7 +5,7 @@
       <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8 col-sm-12">
-                <h2>Lista de usuários puxados da <a href="https://jsonplaceholder.typicode.com/users" class="linkUser">JSONPlaceholder</a></h2>
+                <h2>Lista de usuários consumidos da <a href="https://jsonplaceholder.typicode.com/users" class="linkUser">JSONPlaceholder</a></h2>
               <table class="table table-dark mt-4">
                   <thead>
                       <tr>
@@ -31,17 +31,17 @@
           <div class="col-md-2"></div>
       </div>
       <div class="row">
-          <div class="col-md-2"></div>
+          <div class="col-md-4"></div>
          
-          <div class="col-md-8 col-sm-12  align-self">
+          <div class="col-md-4 col-sm-12  align-self">
                <h2>Inserir dados </h2>
-              <input type="text" v-model="newUser" class="form-control">
-              <input type="text" v-model="newEmail" class="form-control mt-2">
-              <input type="text" v-model="newPhone" class="form-control mt-2">
+              <input type="text" v-model="newUser" class="form-control" placeholder="Insira o nome">
+              <input type="text" v-model="newEmail" class="form-control mt-2" placeholder="Insira o email">
+              <input type="text" v-model="newPhone" class="form-control mt-2" placeholder="Insira o número do telefone">
               <button class="btn btn-success mt-4" @click="addUsers"> Adicionar  </button>
              
           </div>
-           <div class="col-md-2"></div>
+           <div class="col-md-4"></div>
       </div>
     </div>
     
