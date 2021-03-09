@@ -79,6 +79,7 @@ export default {
     background: #fff;
     position: absolute;
     top: 50%;
+    margin: 2rem;
     transform: translateY(-50%);
 }
 .card .details .center h1 {

@@ -1,8 +1,12 @@
 <template>
-<div class="container-fluid mt-5 footerdiv" >
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-lg-12 fixed-bottom">
   <footer>
    <p><strong>Criado por: </strong>Jonathan Malagueta </p>
  </footer>
+  </div>
+</div>
 </div>
 </template>
 
@@ -14,31 +18,20 @@ export default {
 
 <style>
 p{
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: 15px;
 }
 
-.footerdiv{
-  margin-left: -2rem;
-  width: 100%;
-  margin: 0;
-}
+
 footer{
     background: #582ec2;
-     position: absolute;
-     color: #fff;
-     /* margin-left: -10rem; */
-     margin-bottom: 0rem;
-    width: 100%;
-    margin: 0;
-    height: 50px;    
+    color: #fff;
+    height: 40px;    
     text-align: center;
-    line-height: 10px;
-    margin-top: 100%;
+    line-height: 15px;
+
+  
 }
 
-@media screen and (min-width: 320px) and(max-width: 375px){
-   footer{
-     margin-top: 100%;  
-   }
-}
+
 </style>
