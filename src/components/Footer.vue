@@ -1,7 +1,9 @@
 <template>
+<div class="container-fluid">
   <footer>
    <p><strong>Criado por: </strong>Jonathan Malagueta </p>
  </footer>
+ </div>
 </template>
 
 <script>
