@@ -6,13 +6,13 @@
           <div class="col-md-2"></div>
           <div class="col-md-8 col-sm-12">
                 <h2>Lista de usuários puxados da <a href="https://jsonplaceholder.typicode.com/users" class="linkUser">JSONPlaceholder</a></h2>
-              <table class="table table-bordered mt-4">
+              <table class="table table-dark mt-4">
                   <thead>
                       <tr>
                                 <th scope="col">id</th>
                                 <th scope="col">nome</th>
                                 <th scope="col">email</th>
-                                <th scope="col">telefone</th>
+                                
                                 
                        </tr>
                   </thead>
@@ -21,7 +21,7 @@
                  <td>{{user.id}}</td>
                  <td>{{user.name}}</td>
                  <td>{{user.email}}</td>
-                 <td>{{user.phone}}</td>
+                 
 
                </tr>
                    </tbody>

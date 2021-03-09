@@ -1,9 +1,9 @@
 <template>
-<div class="container-fluid">
+<div class="container-fluid mt-5 footerdiv" >
   <footer>
    <p><strong>Criado por: </strong>Jonathan Malagueta </p>
  </footer>
- </div>
+</div>
 </template>
 
 <script>
@@ -16,10 +16,17 @@ export default {
 p{
   margin-top: 20px;
 }
+
+.footerdiv{
+  margin-left: -2rem;
+  width: 100%;
+  margin: 0;
+}
 footer{
     background: #582ec2;
      position: absolute;
      color: #fff;
+     /* margin-left: -10rem; */
      margin-bottom: 0rem;
     width: 100%;
     margin: 0;
@@ -29,5 +36,9 @@ footer{
     margin-top: 100%;
 }
 
-
+@media screen and (min-width: 320px) and(max-width: 375px){
+   footer{
+     margin-top: 100%;  
+   }
+}
 </style>

@@ -45,7 +45,8 @@ export default {
   text-decoration: none;
 }
 .sep{
-  margin-top: 50%;
+  margin: 0;
+  margin-top: 10%;
   width: 100%;
 }
 
