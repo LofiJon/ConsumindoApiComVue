@@ -9,7 +9,7 @@
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <h2>Lista de usuários puxados da api livre  <a href="https://ghibliapi.herokuapp.com/films" class="linkUser">Studio Ghibli</a></h2>
+      <h2>Lista de filmes consumidos da api livre  <a href="https://ghibliapi.herokuapp.com/films" class="linkUser">Studio Ghibli</a></h2>
    
          <li v-for="film in films" :key="film.id">
            <div class="card mt-5 mycadrd">
